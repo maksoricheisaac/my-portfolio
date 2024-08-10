@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "My Static Blog",
-        "desc": "C'est unnblog static qui n'utilise pas de base de données externes. Il s'agit d'un site fait avec Next.Js",
+        "desc": "C'est un blog static qui n'utilise pas de base de données externes. Il s'agit d'un site fait avec Next.Js",
         "link": "https://my-static-blog-xi.vercel.app/"
     },
     {
