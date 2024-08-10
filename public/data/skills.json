@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "React"
+    },
+    {
+        "id": 2,
+        "name": "Next.js"
+    },
+    {
+        "id": 3,
+        "name": "Typescript"
+    },
+    {
+        "id": 4,
+        "name": "Node.js"
+    },
+    {
+        "id": 5,
+        "name": "Express.js"
+    },
+    {
+        "id": 6,
+        "name": "PHP"
+    },
+    {
+        "id": 7,
+        "name": "Python"
+    },
+    {
+        "id": 8,
+        "name": "MySql"
+    },
+    {
+        "id": 9,
+        "name": "Mongodb"
+    },
+    {
+        "id": 10,
+        "name": "Java"
+    }
+]
