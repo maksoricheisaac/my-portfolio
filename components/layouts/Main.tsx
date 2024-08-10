@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React from 'react'
-import DotPattern from "../magicui/dot-pattern";
+import DotPattern from "../ui/dot-pattern";
 import Image from "next/image";
 import me from '../../public/images/me.png'
 

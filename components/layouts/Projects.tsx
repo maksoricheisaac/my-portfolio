@@ -36,7 +36,7 @@ const Projects = (props: Props) => {
             <h2 className="text-2xl font-bold tracking-tighter ">Découvrez mes derniers travaux</h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Je travaille sur une grande variété de projets, allant de simples sites Web à des applications Web complexes. Voici quelques-uns de mes préférés.</p>
         </div>
-        <div className='flex flex-col md:flex-row items-center gap-5 justify-center'>
+        <div className='flex flex-col gap-2 md:flex-row items-center md:gap-5 justify-center'>
             {projects.map((project: Project) => (
                 <CardContainer key={project.id} className="inter-var">
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto  h-auto rounded-xl p-6 border  ">
