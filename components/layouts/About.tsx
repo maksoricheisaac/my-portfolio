@@ -13,7 +13,7 @@ const About = (props: Props) => {
           <div>
             <p className='my-2'>Hello! I am a junior fullstack web developer with a deep passion for crafting innovative digital solutions that make a difference. My expertise spans a wide array of technologies, including React, Next.js, Node.js, PHP, and various databases like MySQL and MongoDB. I thrive on transforming complex problems into elegant, user-friendly applications and enjoy leveraging my skills in both frontend and backend development to create seamless, high-performing digital experiences.</p>
             <p className='my-2'>Committed to continuous learning, I stay updated on industry trends and best practices. Eager to tackle challenges, I bring technical expertise and creative problem-solving to projects, whether independently or in teams, delivering solutions that exceed client expectations and push digital boundaries.</p>
-            <p className='my-2'>Let's connect and explore how I can turn your next project into a reality with innovative and effective web solutions!</p>
+            <p className='my-2'>Connect and explore how I can turn your next project into a reality with innovative and effective web solutions!</p>
           </div>
         </div>
         
