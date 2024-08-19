@@ -12,7 +12,7 @@ type Props = {
 
 const Main = ({children}: Props) => {
   return (
-    <div className="px-10 md:px-[200px] relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow">
+    <div className="z-0 px-10 relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow">
       <div>
         {children}
         

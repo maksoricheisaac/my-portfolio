@@ -4,11 +4,12 @@ import projects from '../../public/data/projects.json'
 
 import img1 from '../../public/images/projects/project1.png'
 import img2 from '../../public/images/projects/project2.png'
+import img3 from '../../public/images/projects/project3.png'
 import Image from 'next/image'
 import { CardBody, CardContainer, CardItem } from '../ui/3d-card'
-import { link } from 'fs'
+
 import Link from 'next/link'
-import { Button } from '../ui/button'
+
 
 
 type Project = {
@@ -19,7 +20,7 @@ type Project = {
 
 }
 
-const imgs = [img1, img2]
+const imgs = [img1, img2, img3]
 
 const getImg = (id:number) => {
     const img = imgs[id - 1]
@@ -30,15 +31,15 @@ type Props = {}
 
 const Projects = (props: Props) => {
   return (
-    <section id="projects" className='my-20'>
+    <section id="projects" className='px-24 md:my-20 lg:py-20 md:px-5 lg:px-24 my-20'>
        <div className="space-y-2 flex flex-col items-center justify-center">
-            <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">Mes Projets</div>
-            <h2 className="text-2xl font-bold tracking-tighter ">Découvrez mes derniers travaux</h2>
-            <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Je travaille sur une grande variété de projets, allant de simples sites Web à des applications Web complexes. Voici quelques-uns de mes préférés.</p>
+            <p className="text-4xl font-bold text-center">My Projects</p>
+            <h3 className="text-xl font-bold tracking-tighter my-4">Discover my latest works</h3>
+            <p className="text-muted-foreground md:text-md/relaxed ">I work on a wide variety of projects, from simple websites to complex web applications. Here are some of my favorites.</p>
         </div>
         <div className='flex flex-col gap-2 md:flex-row items-center md:gap-5 justify-center'>
             {projects.map((project: Project) => (
-                <CardContainer key={project.id} className="inter-var">
+                <CardContainer key={project.id} className="inter-var h-[500px]">
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto  h-auto rounded-xl p-6 border  ">
                   <CardItem
                     translateZ="50"

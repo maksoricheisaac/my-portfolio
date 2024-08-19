@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "JavaScript Masterclass for Beginner to Expert: Bootcamp"
+    },
+    
+    {
+        "id": 2,
+        "name": "MongoDB - The Complete MongoDB Developers Course"
+    },
+    
+    {
+        "id": 3,
+        "name": "Complete Python Course : Learn From Beginner to Advanced"
+    },
+    
+    {
+        "id": 4,
+        "name": "Tailwind CSS in 1h : Master this powerful CSS framework"
+    },
+    
+    {
+        "id": 5,
+        "name": "Bootstrap 5 : Create and launch responsive websites"
+    },
+    
+    {
+        "id": 6,
+        "name": "Building Blog using MERN Stack"
+    }
+]

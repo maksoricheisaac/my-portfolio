@@ -2,13 +2,19 @@
     {
         "id": 1,
         "title": "My Static Blog",
-        "desc": "C'est un blog static qui n'utilise pas de base de données externes. Il s'agit d'un site fait avec Next.Js",
+        "desc": "This is a static blog that does not use any external database. This is a site made with Next.Js",
         "link": "https://my-static-blog-xi.vercel.app/"
     },
     {
         "id": 2,
         "title": "SeoMaster",
-        "desc": "Un site internet pour les agences de marketing digital. Fait avec React.js",
+        "desc": "A website for digital marketing agencies. Made with React.js",
         "link": "https://seomaster-brown.vercel.app/"
+    },
+    {
+        "id": 3,
+        "title": "RM Reservation",
+        "desc": "A bus ticket booking website. Application built with PHP and MySQL",
+        "link": "https://github.com/maksoricheisaac/site-reservation.git"
     }
 ]

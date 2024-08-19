@@ -8,8 +8,8 @@ const Contact = (props: Props) => {
   return (
     <section id="contact" className="my-20 space-y-3 flex flex-col items-center justify-center">
         <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">Contact</div>
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Me contacter</h2>
-        <p className='text-gray-500 text-center'>Laissez-moi un message sur WhatsApp</p>
+        <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl">Contact Me</h2>
+        <p className='text-gray-500 text-center'>Leave me a message on WhatsApp</p>
         <div className="group relative">
     <Link href="https://wa.me/242056073456?text=Bonjour,%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20services.%20Pouvez-vous%20me%20donner%20plus%20d'informations,%20s'il%20vous%20pla%C3%AEt%20?%0A">
         <svg
