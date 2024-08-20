@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import projects from '../../public/data/projects.json'
+import projects from '../../data/projects.json'
 
 import img1 from '../../public/images/projects/project1.png'
 import img2 from '../../public/images/projects/project2.png'
@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { CardBody, CardContainer, CardItem } from '../ui/3d-card'
 
 import Link from 'next/link'
+import { CardFooter } from '../ui/card'
 
 
 
@@ -17,7 +18,7 @@ type Project = {
     title: string,
     desc: string,
     link: string,
-
+    languages: string
 }
 
 const imgs = [img1, img2, img3]
@@ -33,17 +34,17 @@ const Projects = (props: Props) => {
   return (
     <section id="projects" className='px-24 md:my-20 lg:py-20 md:px-5 lg:px-24 my-20'>
        <div className="space-y-2 flex flex-col items-center justify-center">
-            <p className="text-4xl font-bold text-center">My Projects</p>
+            <p className="text-4xl font-bold text-center dark:text-primary">My Projects</p>
             <h3 className="text-xl font-bold tracking-tighter my-4">Discover my latest works</h3>
-            <p className="text-muted-foreground md:text-md/relaxed ">I work on a wide variety of projects, from simple websites to complex web applications. Here are some of my favorites.</p>
+            <p className="text-muted-foreground md:text-md/relaxed text-center">I work on a wide variety of projects, from simple websites to complex web applications. Here are some of my favorites.</p>
         </div>
-        <div className='flex flex-col gap-2 md:flex-row items-center md:gap-5 justify-center'>
+        <div className='flex flex-col gap-2 md:grid md:grid-cols-3 items-center md:gap-5 justify-center lg:grid  grid-cols-3'>
             {projects.map((project: Project) => (
-                <CardContainer key={project.id} className="inter-var h-[500px]">
+                <CardContainer key={project.id} className="inter-var ">
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto  h-auto rounded-xl p-6 border  ">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-xl font-bold text-neutral-600 dark:text-primary"
                   >
                     {project.title}
                   </CardItem>
@@ -57,18 +58,22 @@ const Projects = (props: Props) => {
                   <CardItem translateZ="100" className="w-full mt-4">
                     {getImg(project.id)}
                   </CardItem>
-                  <div className="flex justify-between items-center mt-20">
+                  <p className="text-md my-5 text-neutral-500"> {project.languages} </p>
+                  <div className="flex justify-between items-center">
                     
                     <Link
                       href={project.link}
                       
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                      className="px-4 py-2 rounded-xl text-primary-foreground bg-primary text-xs font-bold"
                     >
                       Voir plus
                     </Link>
                   </div>
+                  
                 </CardBody>
+                
               </CardContainer>
+              
             ))}
         </div>
     </section>

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "My Static Blog",
+        "desc": "This static blog does not use any external database. It made with Next.Js",
+        "link": "https://my-static-blog-xi.vercel.app/",
+        "languages": "React, NextJS, Tailwind CSS"
+    },
+    {
+        "id": 2,
+        "title": "SeoMaster",
+        "desc": "A website for digital marketing agencies. Made with React.js",
+        "link": "https://seomaster-brown.vercel.app/",
+        "languages": "Vite, React, Tailwind CSS"
+    },
+    {
+        "id": 3,
+        "title": "RM Reservation",
+        "desc": "A bus ticket booking website. Application built with PHP and MySQL",
+        "link": "https://github.com/maksoricheisaac/site-reservation.git",
+        "languages": "Bootstrap, PHP, MySQL"
+    }
+]

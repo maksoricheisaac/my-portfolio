@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 
 
 import Link from 'next/link';
-import hero from '../../public/data/hero.json'
+import hero from '../../data/hero.json'
 import me from '../../public/images/me.png'
 import Image from "next/image"
 
@@ -10,7 +11,7 @@ export const Hero = () => {
     <div className=" w-full px-24 md:py-32 lg:px-24 my-20">
         <div className="md:mt-14 lg:-mt-5 flex flex-col-reverse md:flex-row items-center justify-between">
           <div className="">
-              <h1 className="text-5xl text-center font-bold md:text-start">{hero.title} </h1>
+              <h1 className="text-5xl text-center font-bold md:text-start"> Hi ! I'm  <span className="dark:text-primary">Riche Makso</span> {hero.title} </h1>
               <p className='mt-3'> {hero.intro} </p>
           </div>
           <div className="md:w-1/3">
@@ -18,8 +19,8 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-4 my-5">
-          <Link href="#contact" className='text-white bg-black dark:bg-white dark:text-black p-3 rounded-md font-bold'>Contact Me</Link>
+        <div className="flex items-center justify-center md:items-start md:justify-start gap-4 my-5">
+          <Link href="#contact" className='text-primary-foreground bg-primary p-3 rounded-md '>Contact Me</Link>
         </div>
 
         
