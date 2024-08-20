@@ -34,13 +34,13 @@ const Projects = (props: Props) => {
   return (
     <section id="projects" className='px-24 md:my-20 lg:py-20 md:px-5 lg:px-24 my-20'>
        <div className="space-y-2 flex flex-col items-center justify-center">
-            <p className="text-4xl font-bold text-center dark:text-primary">My Projects</p>
-            <h3 className="text-xl font-bold tracking-tighter my-4">Discover my latest works</h3>
-            <p className="text-muted-foreground md:text-md/relaxed text-center">I work on a wide variety of projects, from simple websites to complex web applications. Here are some of my favorites.</p>
+            <p className="text-4xl font-bold text-center dark:text-primary" data-aos="fade-left">My Projects</p>
+            <h3 className="text-xl font-bold tracking-tighter my-4" data-aos="zoom-in">Discover my latest works</h3>
+            <p className="text-muted-foreground md:text-md/relaxed text-center" data-aos="zoom-in">I work on a wide variety of projects, from simple websites to complex web applications. Here are some of my favorites.</p>
         </div>
-        <div className='flex flex-col gap-2 md:grid md:grid-cols-3 items-center md:gap-5 justify-center lg:grid  grid-cols-3'>
+        <div data-aos="fade-right" className='flex flex-col gap-2 md:grid md:grid-cols-3 items-center md:gap-5 justify-center lg:grid  grid-cols-3'>
             {projects.map((project: Project) => (
-                <CardContainer key={project.id} className="inter-var ">
+                <CardContainer  key={project.id} className="inter-var ">
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto  h-auto rounded-xl p-6 border  ">
                   <CardItem
                     translateZ="50"

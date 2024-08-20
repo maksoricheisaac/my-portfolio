@@ -11,6 +11,7 @@ import Skills from "@/components/layouts/Skills";
 
 
 
+
 export default function Home() {
   return (
     <Main>
@@ -20,7 +21,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-     
     </Main>
     
   )

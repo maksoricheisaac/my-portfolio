@@ -18,11 +18,11 @@ type Props = {}
 export const Education = (props: Props) => {
   return (
     <section id="education" className='px-24 md:px-5 md:py-16'>
-        <h2 className="text-4xl text-center dark:text-primary font-bold">Education</h2>
-        <p className='text-center my-3'>Learning is the key that opens the doors of knowledge, and education is the path that guides us through those doors.</p>
+        <h2 className="text-4xl text-center dark:text-primary font-bold" data-aos="fade-left">Education</h2>
+        <p className='text-center my-3' data-aos="fade-top">Learning is the key that opens the doors of knowledge, and education is the path that guides us through those doors.</p>
         <div className='grid md:grid-cols-2 gap-5 md:grid-rows-3'>
             {educations.map((item) => (
-                <Card  className="group flex items-center justify-center w-80 md:w-[380px] lg:w-[500px] h-[130px] md:h-32 my-2 py-2 md:p-2" key={item.id}>
+                <Card data-aos="fade-right"  className="group flex items-center justify-center w-80 md:w-[380px] lg:w-[500px] h-[130px] md:h-32 my-2 py-2 md:p-2" key={item.id}>
                 <CardContent>
                     
                     <div className=' flex items-center justify-center gap-5  w-full'>
